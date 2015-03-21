@@ -15,12 +15,12 @@
 #
 
 name "gdbm"
-default_version "1.9.1"
+default_version "1.8.3"
 
-source url: "http://ftp.gnu.org/gnu/gdbm/gdbm-1.9.1.tar.gz",
-       md5: "59f6e4c4193cb875964ffbe8aa384b58"
+source url: "http://ftp.gnu.org/gnu/gdbm/gdbm-#{version}.tar.gz",
+       md5: "1d1b1d5c0245b1c00aff92da751e9aa1"
 
-relative_path "gdbm-1.9.1"
+relative_path "gdbm-#{version}"
 
 build do
   env = with_standard_compiler_flags(with_embedded_path)
