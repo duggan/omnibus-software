@@ -30,9 +30,12 @@ relative_path "Python-#{version}"
 
 build do
   env = {
+    "CPPFLAGS" => "-static",
     "CFLAGS" => "-I#{install_dir}/embedded/include -O3 -g -pipe",
-    "LDFLAGS" => "-Wl,-rpath,#{install_dir}/embedded/lib -L#{install_dir}/embedded/lib",
+    "LDFLAGS" => "-Wl,-rpath,#{install_dir}/embedded/lib -L#{install_dir}/embedded/lib -static -static-libgcc",
   }
+
+  patch source: 'static_py.patch'
 
   command "./configure" \
           " --prefix=#{install_dir}/embedded" \
