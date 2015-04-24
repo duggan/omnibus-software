@@ -1,5 +1,5 @@
---- Setup.orig	2015-04-24 21:10:50.745125471 +0000
-+++ Setup	2015-04-24 21:16:03.233185275 +0000
+--- Python-2.7.9/Setup.orig	2015-04-24 21:10:50.745125471 +0000
++++ Python-2.7.9/Setup	2015-04-24 21:16:03.233185275 +0000
 @@ -60,6 +60,7 @@
  # In addition, *static* explicitly declares the following modules to
  # be static.  Lines containing "*static*" and "*shared*" may thus
